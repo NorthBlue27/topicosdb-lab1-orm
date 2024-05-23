@@ -3,7 +3,7 @@ version: '3.0'
 services:
   postgres-nestjs-db:
     image: postgres:16.1
-    container_name: backend-base-nestjs
+    container_name: persistencia-objetos-orm
     restart: always
     environment:
       POSTGRES_USER: ${DB_USER}

@@ -30,7 +30,7 @@ export class PersonController {
   }
 
   @Get(ApiMethods.FIND_ALL)
-  @Auth(ERoles.USER)
+  // @Auth(ERoles.USER)
   @ApiOkResponse({ type: RPagination })
   findAll(@Query() paginationDto?: PaginationDto) {
     return this.personService.findAll(paginationDto);
